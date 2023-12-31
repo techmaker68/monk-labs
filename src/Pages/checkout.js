@@ -1,14 +1,17 @@
 import React from "react";
 import BackSvg from "./components/icons/backSvg";
-function checkout(props) {
+import { Link } from "react-router-dom";
+function checkout() {
   return (
     <div>
       <div class="container py-5">
         <div class="row">
-          <div class="col-4 col-sm-5">
-          <BackSvg />
+          <div class="col-4 col-sm-5 text-start">
+            <Link to={"/my-bucket"}>
+              <BackSvg />
+            </Link>
           </div>
-          <div class="col-8 col-sm-7">
+          <div class="col-8 col-sm-7 text-end">
             <h4>
               <strong>Checkout</strong>
             </h4>
@@ -32,7 +35,9 @@ function checkout(props) {
               </h4>
             </div>
             <div>
-              <button class="btn btn-orange p-2 px-4">Pay Now</button>
+              <Link to={"/success"}>
+                <button class="btn btn-orange p-2 px-4">Pay Now</button>
+              </Link>
             </div>
           </div>
         </div>

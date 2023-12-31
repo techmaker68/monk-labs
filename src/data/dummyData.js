@@ -75,22 +75,28 @@ const categories = [
     id: 1,
     name: "Steak",
     image: Cat,
+    color: '#ffe8ee',
   },
 
   {
     id: 1,
     name: "Salad",
     image: Cat2,
+    color: '#eaf9e6',
+
   },
   {
     id: 1,
     name: "Chicken",
+    color: '#ffeee8',
     image: Cat,
+
   },
   {
     id: 1,
     name: "Beef",
     image: Cat,
+    color: '#eaf9e6',
   },
 ];
 

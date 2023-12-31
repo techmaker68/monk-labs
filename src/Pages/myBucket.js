@@ -9,7 +9,9 @@ function MyBucket(props) {
       <div className="container py-5">
         <div className="row">
           <div className="col-4 col-sm-5 text-start">
+            <Link to={'/product-detail'}>
             <BackSvg />
+            </Link>
           </div>
           <div className="col-8 col-sm-7 text-end">
             <h4>

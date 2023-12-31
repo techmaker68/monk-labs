@@ -9,11 +9,6 @@ const Success = () => {
         <div className="col-4 col-sm-5">
          <BackSvg/>
         </div>
-        <div className="col-8 col-sm-7">
-          <h4>
-            <strong>Checkout</strong>
-          </h4>
-        </div>
       </div>
 
       <div className="container my-5 text-center">

@@ -67,7 +67,7 @@ function Index() {
         <div className="row scroll category">
           {categories.map((item, index) => (
             <div key={index} className="col-md-3 col-3">
-              <div className="box1 category-box">
+              <div style={{backgroundColor: item.color}} className="box1 category-box">
                 <h4>{item.name}</h4>
                 <img src={item.image} alt="Salad" />
               </div>
@@ -89,7 +89,7 @@ function Index() {
             <div className="col-md-3 col-6 mb-4" key={item.id}>
               <div className="card border-0 shadow">
                 <Link
-                  to={`/product-detail/${item}`}
+                  to={`/product-detail`}
                   onClick={() => setDetails(item)}
                 >
                   <img
