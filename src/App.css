@@ -259,7 +259,7 @@ display: none !important;
 }
 
 .details-section {
-  background: #F7F7F7;
+  /* background: #F7F7F7; */
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 24px;
@@ -268,10 +268,11 @@ display: none !important;
 
 .details-section h3 {
   color: #333;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
+
 
 .details-section .address,
 .details-section .phone {
@@ -320,6 +321,12 @@ display: none !important;
   .category-box {
     margin-bottom: 20px; 
   }
+  .category-box h4{
+  font-size: 16px;
+  }
+  .card-title {
+    font-size: 16px;
+    }
   .footer-app {
     display: block !important;
     }
@@ -342,10 +349,12 @@ display: none !important;
   .navbar-expand-xxl {
       flex-wrap: nowrap;
       justify-content: flex-start;
+      
   }
   .navbar-expand-sm .navbar-nav, .navbar-expand-xl .navbar-nav, .navbar-expand-xxl .navbar-nav  {
       flex-direction: row;
       background-color: #f0f4fc !important;
+      
   }
   .justify-content-end {
       display: flex;

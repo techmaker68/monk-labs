@@ -14,7 +14,7 @@ const Success = () => {
           look forward to serving you.
         </p>
         <Link to={'/'}>
-        <button className="btn btn-orange mt-4  p-2">Return Home</button>
+        <button className="btn btn-orange mt-4">Return Home</button>
         </Link>
       </div>
     </div>

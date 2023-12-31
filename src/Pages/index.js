@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import cat from "../assets/cat.png";
-import cat2 from "../assets/cat2.png";
 import HeartSvg from "./components/icons/heartSvg";
 import Footer from "./components/footer";
 import { Link } from "react-router-dom";
@@ -67,7 +65,10 @@ function Index() {
         <div className="row scroll category">
           {categories.map((item, index) => (
             <div key={index} className="col-md-3 col-3">
-              <div style={{backgroundColor: item.color}} className="box1 category-box">
+              <div
+                style={{ backgroundColor: item.color }}
+                className="box1 category-box"
+              >
                 <h4>{item.name}</h4>
                 <img src={item.image} alt="Salad" />
               </div>
@@ -88,10 +89,7 @@ function Index() {
           {items.map((item, index) => (
             <div className="col-md-3 col-6 mb-4" key={item.id}>
               <div className="card border-0 shadow">
-                <Link
-                  to={`/product-detail`}
-                  onClick={() => setDetails(item)}
-                >
+                <Link to={`/product-detail`} onClick={() => setDetails(item)}>
                   <img
                     src={item?.image}
                     className="card-img-top"

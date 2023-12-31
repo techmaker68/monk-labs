@@ -4,17 +4,22 @@ import CartSvg from "./icons/cartSvg";
 import UserSvg from "./icons/userSvg";
 import ChartSvg from "./icons/chartSvg";
 import HeartSvg from "./icons/heartSvg";
+import { Link } from "react-router-dom";
 function footer(props) {
   return (
     <div className="footer footer-app">
       <div className="container">
         <div className="footer-navbar">
           <span className="text-orange">
-            <HomeSvg />
+            <Link to={"/"}>
+              <HomeSvg />
+            </Link>
           </span>
           <HeartSvg />
           <span className="home">
-            <CartSvg />
+            <Link to={"/my-bucket"}>
+              <CartSvg />
+            </Link>
           </span>
           <ChartSvg />
           <UserSvg />

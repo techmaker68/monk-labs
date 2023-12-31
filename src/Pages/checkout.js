@@ -90,21 +90,20 @@ function Checkout() {
                     />
                   </div>
                 </div>
-                <hr></hr>
-                <div className="details-section">
-                  <h3>Delivery details</h3>
-                  <p className="address">789 Maple Street, Los Angeles, CA 90001</p>
-                  <p className="phone">(888) 987-6543</p>
-                  <h3>Order details</h3>
-                  <ul className="order-items">
-                    <li>1x Green salad</li>
-                    <li>1x Fresh vegetable</li>
-                    <li>1x Mixed salad</li>
-                    <li>3x Grilled steak</li>
-                    <li>1x Vegan cake</li>
-                  </ul>
-                </div>
               </div>
+            </div>
+            <div className="details-section mt-2">
+              <h2>Delivery details</h2>
+              <p className="address">789 Maple Street, Los Angeles, CA 90001</p>
+              <p className="phone">(888) 987-6543</p>
+              <h2>Order details</h2>
+              <ul className="order-items">
+                <li>1x Green salad</li>
+                <li>1x Fresh vegetable</li>
+                <li>1x Mixed salad</li>
+                <li>3x Grilled steak</li>
+                <li>1x Vegan cake</li>
+              </ul>
             </div>
           </div>
         </div>
