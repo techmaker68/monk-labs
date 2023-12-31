@@ -11,70 +11,49 @@ function ProductDetails(props) {
   const { data } = useData();
   return (
     <div>
-      <div class="mainSection">
-        <div class="topSec">
-          <div class="container pt-5">
-            <div class="row">
-              <div class="col-6 text-start">
-                <Link to={"/"}>
-                  <BackSvg />
-                </Link>
-              </div>
-              <div class="col-6 text-end">
-                <HeartSvg check={data.liked} />
-              </div>
-            </div>
+      <div className="productDetails">
+        <div className="header">
+          <Link to={"/"} className="backButton">
+            <BackSvg />
+          </Link>
+          <HeartSvg className="heartButton" check={data.liked} />
+        </div>
+        <div className="content">
+          <h1 className="productTitle">{data.imageName}</h1>
+          <p className="productSubtitle">By Steak house</p>
+          <div className="rating d-flex justify-content-center align-items-center">
+            <StarSvg />
+            <StarSvg />
+            <StarSvg />
+            <StarSvg />
+            <StarSvg />
+            <span className="ms-2 mb-0">
+              {" "}
+              <strong> 5 </strong>
+            </span>
           </div>
-          <div class="container mt-3">
-            <h2 class="productTitle mb-0">{data.imageName}</h2>
-            <p class="text-secondary my-0">By Steak house</p>
-            <div class="d-flex align-items-center mb-3 ">
-              <StarSvg />
-              <span class="d-block ms-2">4.6</span>
-            </div>
-          </div>
-          <div class="container">
-            <div class="counter">
-              <div className="text-start" onClick={() => setCounter(counter++)}>
-                <PlusSvg />
-              </div>
-              <span class="ml text-start">{counter}</span>
-              <div
-                className="text-start"
-                onClick={() => setCounter(counter !== 0 ? counter-- : 0)}
-              >
-                <MinusSvg />
-              </div>
-              <div class="productDesc">
-                <strong class="d-block">Description</strong>
-                <span class="text-secondary">
-                  Indulge in the mouthwatering delight of a perfectly grilled
-                  beef steak generously topped with a rich and savory mushroom
-                  sauce.
-                </span>
-              </div>
-            </div>
+          <p className="description">
+            Indulge in the mouthwatering delight of a perfectly grilled beef
+            steak generously topped with a rich and savory mushroom sauce.
+          </p>
+          <div className="d-flex flex-column">
             <div>
-              <img src={data.image} alt="" />
+              <img src={data.image} alt="" className="productImage" />
+            </div>
+            <div className="counter">
+              <PlusSvg onClick={() => setCounter++} />
+              <span className="counterValue">{counter}</span>
+              <MinusSvg onClick={() => setCounter--} />
             </div>
           </div>
         </div>
-        <div class="footer bg-transparent">
-          <div class="container">
-            <div class="footer-navbar justify-content-between">
-              <div>
-                <span class="text-secondary">price</span>
-                <h4 class="mt-0">
-                  {data.price} <span class="text-orange"> $</span>
-                </h4>
-              </div>
-              <div>
-                <Link to={'/my-bucket'}>
-                <button class="btn btn-orange p-2 px-4">Add to cart</button>
-                </Link>
-              </div>
-            </div>
-          </div>
+
+        <div className="footer">
+          <span className="priceLabel">price</span>
+          <span className="price">{data.price} $</span>
+          <Link to={"/my-bucket"}>
+            <button className="addToCartButton">Add to cart</button>
+          </Link>
         </div>
       </div>
     </div>

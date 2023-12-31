@@ -2,18 +2,26 @@ import React, { useState } from "react";
 import BackSvg from "./components/icons/backSvg";
 import { dataArray } from "../data/dummyData";
 import { Link } from "react-router-dom";
+
+
 function MyBucket(props) {
   const [items, setItems] = useState(dataArray);
+
   return (
     <div>
       <div className="container py-5">
         <div className="row">
-          <div className="col-4 col-sm-5 text-start">
-            <Link to={'/product-detail'}>
-            <BackSvg />
+          <div className="col-4 col-sm-4 text-start">
+            <Link to={"/product-detail"}>
+              <BackSvg />
             </Link>
           </div>
-          <div className="col-8 col-sm-7 text-end">
+          <div className="col-4 col-sm-4 text-center">
+            <h4 className="p-text-orange">
+              <>Additional items</>
+            </h4>
+          </div>
+          <div className="col-4 col-sm-4 text-end">
             <h4>
               <strong>My Bucket</strong>
             </h4>
@@ -48,7 +56,7 @@ function MyBucket(props) {
           ))}
         </div>
       </div>
-      <div className="footer bg-transparent">
+      <div className="footer ">
         <div className="container">
           <div className="footer-navbar justify-content-between">
             <div>

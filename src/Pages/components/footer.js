@@ -6,7 +6,7 @@ import ChartSvg from "./icons/chartSvg";
 import HeartSvg from "./icons/heartSvg";
 function footer(props) {
   return (
-    <div className="footer">
+    <div className="footer footer-app">
       <div className="container">
         <div className="footer-navbar">
           <span className="text-orange">
