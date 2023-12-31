@@ -1,7 +1,7 @@
 import React from "react";
 import SearchSvg from "./icons/searchSvg";
 
-function navBar(props) {
+function navBar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">

@@ -40,7 +40,7 @@ function ProductDetails() {
               />
             </div>
             <div>
-              <img src={data.image} alt="" className="productImage" />
+              <img src={data.image} alt="img" className="productImage" />
             </div>
           </div>
         </div>

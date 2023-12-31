@@ -18,14 +18,9 @@ function Checkout() {
               <BackSvg />
             </Link>
           </div>
-          <div className="col-4 col-sm-4 text-center text-orange">
+          <div className="col-4 col-sm-4 text-center ">
             <h4>
-              <strong>Payment Details</strong>
-            </h4>
-          </div>
-          <div className="col-4 col-sm-4 text-end">
-            <h4>
-              <strong>Checkout</strong>
+              <strong>Payment</strong>
             </h4>
           </div>
         </div>
@@ -96,14 +91,14 @@ function Checkout() {
               <h2>Delivery details</h2>
               <p className="address">789 Maple Street, Los Angeles, CA 90001</p>
               <p className="phone">(888) 987-6543</p>
-              <h2>Order details</h2>
-              <ul className="order-items">
-                <li>1x Green salad</li>
-                <li>1x Fresh vegetable</li>
-                <li>1x Mixed salad</li>
-                <li>3x Grilled steak</li>
-                <li>1x Vegan cake</li>
-              </ul>
+              <h2 >Order details</h2>
+              <div className="order-items">
+                <p className="address">1x Green salad</p>
+                <p className="address">1x Fresh vegetable</p>
+                <p className="address">1x Mixed salad</p>
+                <p className="address">3x Grilled steak</p>
+                <p className="address">1x Vegan cake</p>
+              </div>
             </div>
           </div>
         </div>
