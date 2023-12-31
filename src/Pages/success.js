@@ -1,16 +1,9 @@
 import React from "react";
 import imageSuccess from '../assets/imageSuccess.png';
-import BackSvg from "./components/icons/backSvg";
 import { Link } from "react-router-dom";
 const Success = () => {
   return (
     <div className="container py-5">
-      <div className="row">
-        <div className="col-4 col-sm-5">
-         <BackSvg/>
-        </div>
-      </div>
-
       <div className="container my-5 text-center">
         <h4>Congratulations!</h4>
         <h4>Your Order Has Been Placed!</h4>
@@ -21,7 +14,7 @@ const Success = () => {
           look forward to serving you.
         </p>
         <Link to={'/'}>
-        <button className="btn btn-orange mt-4">Return Home</button>
+        <button className="btn btn-orange mt-4  p-2">Return Home</button>
         </Link>
       </div>
     </div>

@@ -40,6 +40,7 @@
 body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  background-color: #f0f4fc;
 }
 .box1 {
   background-color: #EAF9E6;
@@ -85,7 +86,7 @@ small {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: #f0f4fc !important; 
   padding: 10px 0;
   height: 5rem;
 }
@@ -144,9 +145,9 @@ small {
 .counter {
   display: grid;
   gap: 10px;
-  position: absolute;
+  /* position: absolute; */
   top: 40vh;
-  max-width: 25rem;
+  /* max-width: 25rem; */
 }
 
 .p-text-orange{
@@ -344,6 +345,7 @@ display: none !important;
   }
   .navbar-expand-sm .navbar-nav, .navbar-expand-xl .navbar-nav, .navbar-expand-xxl .navbar-nav  {
       flex-direction: row;
+      background-color: #f0f4fc !important;
   }
   .justify-content-end {
       display: flex;
@@ -431,6 +433,7 @@ display: none !important;
 .description {
   margin-bottom: 1rem;
   color: #333;
+  font-size: 18px;
 }
 
 .productImage {

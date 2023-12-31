@@ -91,12 +91,12 @@ function Checkout() {
                   </div>
                 </div>
                 <hr></hr>
-                <div class="details-section">
+                <div className="details-section">
                   <h3>Delivery details</h3>
-                  <p class="address">789 Maple Street, Los Angeles, CA 90001</p>
-                  <p class="phone">(888) 987-6543</p>
+                  <p className="address">789 Maple Street, Los Angeles, CA 90001</p>
+                  <p className="phone">(888) 987-6543</p>
                   <h3>Order details</h3>
-                  <ul class="order-items">
+                  <ul className="order-items">
                     <li>1x Green salad</li>
                     <li>1x Fresh vegetable</li>
                     <li>1x Mixed salad</li>
@@ -112,15 +112,15 @@ function Checkout() {
       <div className="footer bg-transparent">
         <div className="container">
           <div className="footer-navbar justify-content-between">
-            <div>
-              <span className="text-secondary">price</span>
+            <div className="d-flex flex-column">
+              <span className="text-secondary text-start">price</span>
               <h4 className="mt-0">
                 25.27 <span className="text-orange"> $</span>
               </h4>
             </div>
             <div>
-              <Link to={"/succcess"}>
-                <button class="btn btn-orange p-2 px-4">Pay</button>
+              <Link to={"/success"}>
+                <button className="btn btn-orange p-2 px-4">Pay</button>
               </Link>
             </div>
           </div>

@@ -37,23 +37,26 @@ function ProductDetails(props) {
             steak generously topped with a rich and savory mushroom sauce.
           </p>
           <div className="d-flex flex-column">
-            <div>
-              <img src={data.image} alt="" className="productImage" />
-            </div>
             <div className="counter">
               <PlusSvg onClick={() => setCounter++} />
               <span className="counterValue">{counter}</span>
               <MinusSvg onClick={() => setCounter--} />
             </div>
+            <div>
+              <img src={data.image} alt="" className="productImage" />
+            </div>
           </div>
         </div>
-
         <div className="footer">
-          <span className="priceLabel">price</span>
-          <span className="price">{data.price} $</span>
-          <Link to={"/my-bucket"}>
-            <button className="addToCartButton">Add to cart</button>
-          </Link>
+          <div className="container d-flex justify-content-between align-items-end">
+            <div className="d-flex flex-column">
+            <span className="priceLabel text-start">price</span>
+            <span className="price ">{data.price} $</span>
+            </div>
+            <Link to={"/my-bucket"}>
+              <button className="addToCartButton ">Add to cart</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

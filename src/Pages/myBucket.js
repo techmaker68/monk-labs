@@ -3,7 +3,6 @@ import BackSvg from "./components/icons/backSvg";
 import { dataArray } from "../data/dummyData";
 import { Link } from "react-router-dom";
 
-
 function MyBucket(props) {
   const [items, setItems] = useState(dataArray);
 
@@ -59,7 +58,7 @@ function MyBucket(props) {
       <div className="footer ">
         <div className="container">
           <div className="footer-navbar justify-content-between">
-            <div>
+            <div className="d-flex flex-column">
               <span className="text-secondary text-start">price</span>
               <h4 className="mt-0">
                 25.27 <span className="text-orange"> $</span>

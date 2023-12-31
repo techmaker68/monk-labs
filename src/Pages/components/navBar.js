@@ -3,7 +3,7 @@ import SearchSvg from "./icons/searchSvg";
 
 function navBar(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
         <a className="navbar-brand d-flex flex-column" href="#">
           <strong>Hey Danyal 👋</strong>

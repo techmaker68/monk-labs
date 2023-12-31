@@ -1,7 +1,7 @@
 import React from "react";
 function userSvg() {
   return (
-    <span class="home">
+    <span className="home">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
